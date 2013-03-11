@@ -1,0 +1,9 @@
+<project>
+	<settings>
+	</settings>
+	<tracks>
+		<track type="audio" name="audio">
+			<filename value="TestAudio.mp3" />
+		</track>
+	</tracks>
+</project>
