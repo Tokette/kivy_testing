@@ -1,0 +1,44 @@
+<MainMenuWidget>:
+	BoxLayout:
+        orientation: 'vertical'
+		padding: 50
+		spacing: 10
+		
+		Title:
+			text: "Project Motion"
+			
+		Button:
+			text: "Commuter Rail"
+			background_color: 1, 0, 1, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			
+		Button:
+			text: "Bus"
+			background_color: 245, 190, .5, .9
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			
+		Button:
+			text: "Subway"
+			background_color: 0, .4, 0, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			on_release: root.ChangeWidget('Subway', None)
+			
+		Button:
+			text: "Trip Planner"
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			
+		Button:
+			text: "Favorites"
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+
+[Title@Label]
+    pos_hint: {'center_x': .5, 'y': .3 }
+    text: ctx.text
+    font_size: '29dp'
+	#center_x: root.width
+	#top: root.top

@@ -1,0 +1,20 @@
+<TransitDisplayWidget>
+
+                
+<TransitDisplayScreenWidget>:
+
+	RelativeLayout:
+	    Label:
+	        text: root.mTransitTitle
+	        pos_hint: {'center_x': .5, 'center_y': .95}
+			font_size: '40sp'
+			
+	    Label:
+	        text: root.mTransitDirection
+	        pos_hint: {'center_x': .5, 'center_y': .85}
+			font_size: '20sp'
+			
+		ListView:
+	        pos_hint: {'center_x': .5, 'center_y': .55}
+	    	item_strings: root.mNextTransitList
+        	size_hint: None, None

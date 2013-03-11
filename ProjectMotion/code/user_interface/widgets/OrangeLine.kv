@@ -1,0 +1,157 @@
+<OrangeLineWidget>
+	#ScrollView:
+		#id: scroll_view
+		#do_scroll_x: False
+		
+		#Button:
+		#	text: "Hello"
+		#	size_hint: (1, 5)
+
+<OrangeLineGraphicWidget>
+	canvas:
+		Color: 
+			rgba: 1, .5, 0, 1
+			
+        Rectangle:
+			pos: self.center_x - 30, 20
+			size: 30, self.height - (self.height / 10)
+			
+	#19 oj line stations
+	# (self.height - (self.height / 10)
+	# Oak Grove
+	# BoxLayout so that the button is to the left, and label is to the right
+	BoxLayout:
+		# Position the x slightly offset from the center so the button sorta lines up...?
+		pos_hint: {'center_x': .54, 'center_y': ((self.height * 19) / 19) / self.height }
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Oak Grove'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Label 1"#"Oak Grove"
+			halign: 'right'
+			size_hint: (None, None)
+	
+	# Malden Center
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': (((self.height) * 18) / 19) / (self.height) }
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Malden Center'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Label 2"#"Malden Center"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Wellington
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': (((self.height) * 17) / 19) / (self.height) }
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Wellington'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Label 3"#"Wellington"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Sullivan
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': .80}
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Sullivan'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Sullivan"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Community College
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': .75}
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Community College'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Community College"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Downtown Crossing
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': .70}
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Downtown Crossing'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Downtown Crossing"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Ruggles
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': .65}
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Ruggles'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Ruggles"
+			halign: 'right'
+			size_hint: (None, None)
+			
+	# Green Street
+	BoxLayout:
+		pos_hint: {'center_x': .54, 'center_y': .60}
+		orientation: 'horizontal'
+		size_hint: (None, None)
+		Button:
+			on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Orange', 'Green Street'))
+			background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+			background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+			size_hint: (None, None)
+			size: (30, 30)
+			pos_hint: {'center_y': .5}
+		Label:
+			text: "Green Street"
+			halign: 'right'
+			size_hint: (None, None)

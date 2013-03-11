@@ -1,0 +1,26 @@
+<RedParkStreetWidget>:
+    label_wid: my_custom_label
+	
+	BoxLayout:
+        orientation: 'vertical'
+		padding: 50
+		spacing: 10
+		
+	Label:
+        font_size: 30 
+        center_x: -50
+        top: 300
+        text: "Park Street : Inbound"
+		
+	Label:
+        font_size: 30  
+        center_x: root.width / 4
+        top: root.top - 10
+        text: "Time until next train:"
+		
+	Label:
+		id: my_custom_label
+        font_size: 70  
+        center_x: root.width / 4
+        top: root.top - 50
+        text: "Label before update"

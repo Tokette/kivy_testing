@@ -1,0 +1,41 @@
+<SubwayWidget>:
+	BoxLayout:
+        orientation: 'vertical'
+		padding: 50
+		spacing: 10
+		
+		Title:
+			text: "Subway Select"
+
+		Button:
+			text: "Orange Line"
+			background_color: 255, .9, 0, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			on_release: root.ChangeWidget('OrangeLine', None)
+			
+		Button:
+			text: "Red Line"
+			background_color: 255, 0, 0, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			on_release: root.ChangeWidget('RedLine', None)
+			
+		Button:
+			text: "Blue Line"
+			background_color: 0, 0, 1, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			
+		Button:
+			text: "Green Line"
+			background_color: 0, 1, 0, 1
+			size_hint: .5, .5
+			pos_hint: {'center_x': .5}
+			
+[Title@Label]
+    pos_hint: {'center_x': .5, 'y': .3 }
+    text: ctx.text
+    font_size: '29dp'
+	#center_x: root.width
+	#top: root.top

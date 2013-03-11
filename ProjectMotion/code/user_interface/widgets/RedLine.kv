@@ -1,0 +1,116 @@
+<RedLineWidget>:
+	canvas:
+		Color: 
+			rgba: 1, 0, 0, 1
+			
+        Rectangle:
+			pos: self.center_x - 15, 0
+			size: 30, self.height
+		
+	Label:
+		text: "Red Line"
+		font_size: 50
+		center_x: root.center_x / 2
+		center_y: root.top / 3
+	
+	# Alewife
+	Button:
+		pos_hint: {'center_x': .5, 'center_y': .95}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Alewife'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		Label:
+			text: "Alewife"
+			pos_x: root.x + 20
+		
+	# Davis
+	Button:
+		text: "Davis"
+		pos_hint: {'center_x': .5, 'center_y': .85}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Davis'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		
+	# Porter
+	Button:
+		text: "Porter Square"
+		pos_hint: {'center_x': .5, 'center_y': .75}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Porter Square'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		
+	# Harvard
+	Button:
+		text: "Harvard Square"
+		pos_hint: {'center_x': .5, 'center_y': .65}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Harvard Square'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		
+	# Porter
+	Button:
+		text: "Central Square"
+		pos_hint: {'center_x': .5, 'center_y': .55}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Central Square'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		
+	# Kendall
+	Button:
+		text: "Kendall/MIT"
+		pos_hint: {'center_x': .5, 'center_y': .45}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Kendall/MIT'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+		
+	# Charles/MGH
+	Button:
+		text: "Charles/MGH"
+		pos_hint: {'center_x': .5, 'center_y': .35}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Charles/MGH'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+	
+	# Park Street
+	Button:
+		text: "Park Street"
+		pos_hint: {'center_x': .5, 'center_y': .25}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Park Street'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+	
+	# Downtown
+	Button:
+		text: "Downtown Crossing"
+		pos_hint: {'center_x': .5, 'center_y': .15}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'Downtown Crossing'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
+	
+	# South Station
+	Button:
+		text: "South Station"
+		pos_hint: {'center_x': .5, 'center_y': .05}
+		on_release: root.ChangeWidget('TransitDisplay', ('Subway', 'Red', 'South Station'))
+		background_normal: 'code/user_interface/widgets/SelectBox_Idle.jpg'
+		background_Down: 'code/user_interface/widgets/SelectBox_Selected.jpg'
+		size_hint: (None, None)
+		size: (30, 30)
